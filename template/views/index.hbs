@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    {{>navbar}}
+    {{!-- hero section --}}
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="row">
+          {{!-- left part --}}
+          <div class="col-md-6 col-12 hero-text order-md-0 order-1">
+<h1>Hey! whatsApp</h1>
+<h1>Welcome to my world</h1>
+<p>I am a <span class="bold-style">Full Stack Developer</span></p>
+<button class="btn-style btn-success">Read More</button>
+
+          </div>
+          {{!-- right part --}}
+          <div class="col-md-6 col-12 hero-text order-md-1 order-0">
+<figure>
+  <img src="images/growth.svg" alt="sample">
+</figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{>footer}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
